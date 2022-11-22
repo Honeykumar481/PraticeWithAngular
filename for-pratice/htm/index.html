@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget-Planner</title>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <link rel="stylesheet" href="jiva.css" />
+  </head>
+
+  <body>
+    <ion-app>
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Budget Planner</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Hello Honey</ion-card-title>
+          </ion-card-header>
+          <ion-grid>
+            <ion-row>
+              <ion-col size-md="6" offset-md="3">
+                <ion-card-content>
+                  Budget planner list is given below.
+                  <ion-item>
+                    <ion-label position="floating">Expense reason</ion-label>
+                    <ion-input id="reason" placeholder="Enter text"></ion-input>
+                  </ion-item>
+                  <ion-item
+                    ><ion-label position="floating">Expense amount</ion-label>
+                    <ion-input id="amount" placeholder="Enter text"></ion-input
+                  ></ion-item>
+                  <div id="vikas">
+                    <ion-toolbar
+                      ><ion-button id="clear">clear</ion-button>
+                      <ion-button id="add">Add Expense</ion-button></ion-toolbar
+                    >
+                  </div>
+                </ion-card-content>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size-md="6" offset-md="3">
+                <ion-list id="ListShow"> </ion-list>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size-md="6" offset-md="3">
+                <p margin>The total expenses<span id="total"></span></p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-content>
+    </ion-app>
+    <script src="app.js"></script>
+  </body>
+</html>
